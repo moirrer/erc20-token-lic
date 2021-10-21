@@ -130,7 +130,7 @@ class TransferToken extends Component {
     await this.getMyAccountBalance(this.state.accounts[0])
 
     // Check if transfer amount is < than current balance
-    if (this.state.balance < this.state.transferAmount) {
+    if (parseInt(this.state.balance) < parseInt(this.state.transferAmount)) {
       this.setWarning(this.state.accounts[0] + ' has no balance to make this transfer')
       return
     }
