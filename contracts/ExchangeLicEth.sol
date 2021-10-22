@@ -7,7 +7,7 @@ contract ExchangeLicEth {
     
     string public name = "ExchangeLicEth";
     LibertyCoin public token;
-    uint public rate = 100;
+    uint public rate = 2;
 
     event TokenPurchased (
         address account,
@@ -49,5 +49,17 @@ contract ExchangeLicEth {
         msg.sender.transfer(etherAmount);
 
         emit TokenSold(msg.sender, address(token), _amount, rate);
+    }
+
+    /**
+     * Overright default rate of value to exchange LIC for ETH
+     */
+    function setRate(uint x) public {
+        require(x >= 1);
+        rate = x;
+    }
+
+    function getRate() public view returns (uint) {
+        return rate;
     }
 }
