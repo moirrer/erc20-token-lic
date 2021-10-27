@@ -14,7 +14,7 @@ With this you will have access to use, play and edit 3 different contracts that 
 
 * Contract to only store a variable in blockchain (most useful to see a contract as a program and check solidity language basics);
 * A contract for a standard ERC20 token, it's your own crypto within the etherium network (local network, don't get excited, no monetary value "XD);
-* Contract where you can sell/buy your currency over etherium, an exchange contract (still in development, contract and tests ok, missing web component).
+* Contract where you can sell/buy your currency over etherium, an exchange contract.
 
 ## Ready to use
 
@@ -25,11 +25,12 @@ With this you will have access to use, play and edit 3 different contracts that 
 * ExchangeLicEth.sol tests for deployment, buy tokens, sell tokens and set rate (exchangeLicEth.test.js);
 * Web interface to increase and decrease value in blockchain stored variable;
 * Web interface to transfer LIC tokens (LibertyCoin) from one account to a second account.
+* Web interface to exchange LIC tokens and ETH tokens (ExchangeLicEth.sol).
 
 ## Before you begin
 * download [Truffle](https://www.trufflesuite.com/truffle) to deploy contracts and run tests;
 * download [Ganache](https://www.trufflesuite.com/ganache) and start your local blockchain;
-* download [Metamask](https://metamask.io/) addon into your browser;
+* download [Metamask](https://metamask.io/) addon into your browser.
 
 ## Usage
 * now let's compile contracts and deploy into ganache (do not forget to start ganache first) blockchain, in project root directory run:
@@ -52,20 +53,16 @@ With Ganache running and Metamask installed, you can now open http://localhost:3
 
 ![StorageContract](https://github.com/moirrer/erc20-token-lic/blob/master/client/src/assets/tutorial/simple_storage.png?raw=true)
 ![TransferContract](https://github.com/moirrer/erc20-token-lic/blob/master/client/src/assets/tutorial/transfer_token.png?raw=true)
-
+![ExchangeToken](https://github.com/moirrer/erc20-token-lic/blob/master/client/src/assets/tutorial/exchange_token.png?raw=true)
 ## Run tests
 * in project root directory run:
 ```bash
    truffle test
 ```
 
-Have fun 0/
- 
 ## Next steps
-* exchangeLicEth contract web interface with option to:
-   * buy LIC tokens for ETH token
-   * sell LIC tokens for ETH token
-   * set LIC to ETH exchange rate
+* Cross-chains
+* Lottery Systems
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
