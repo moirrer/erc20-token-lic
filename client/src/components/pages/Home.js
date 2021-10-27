@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import AddTransaction from '../transactions/AddToVariable'
 import TransferToken from '../transactions/TransferToken'
-import ExchangeLicEth from '../transactions/ExchangeLicEth'
+import ExchangeLicEth from '../transactions/ExchangeLicEth/ExchangeLicEth'
 import Log from '../../util/Log'
 import './../../App.scss'
 
@@ -60,7 +60,7 @@ class Home extends Component {
 
         <h3>Smart Contract Example 3: Exchange Token</h3>
         <p>
-          Prety much the final part, the goal here is to exchange one type of ERC20 token for another.<br/>
+          The goal here is to exchange one type of ERC20 token for another.<br/>
           We will be exchanging LIC tokens for ETH tokens, with a given rate of conversion. 
         </p>     
         <ExchangeLicEth />

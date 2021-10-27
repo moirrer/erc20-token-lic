@@ -6,7 +6,7 @@ import "../../App.scss"
 
 class AddToVariable extends Component {
   state = { storageValue: 0, web3: null, accounts: null, contract: null, warning: null }
-  log = new Log('AddToVariable.js', '#96c73c', true)
+  log = new Log('AddToVariable.js', '#96c73c', false)
 
   componentDidMount = async () => {
     this.log.info('componentDidMount')

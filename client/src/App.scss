@@ -25,13 +25,10 @@ $color-base: #87CEEB;
 }
 
 .warning {
-  color: red;
+  color: #f2ff5e;
 }
 
 img {
-  &.logo {
-    
-  }
   &.tutorial {
     border: 4px solid $color-base;
     width: 70vw;
@@ -50,4 +47,18 @@ input {
 .todo {
   text-align: left;
   padding-left: 15px;
+}
+
+.section-exchange {
+  background-color: lightseagreen;
+  padding: 20px 0px;
+
+  &.buy-sell {
+    background-color: rgba(28, 156, 150, 0.658);
+    padding: 20px 0px;
+  }
+}
+
+.border {
+  border: 1px solid black;
 }

@@ -15,7 +15,7 @@ class TransferToken extends Component {
     transferAmount: 1,
     warning: null 
   }
-  log = new Log('TransferToken.js', '#4287f5', true)
+  log = new Log('TransferToken.js', '#4287f5', false)
 
   componentDidMount = async () => {
     this.log.info('componentDidMount')
